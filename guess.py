@@ -1,7 +1,6 @@
 """
 Guessing Game.
 Except the number is constantly changing.
-Based on your guess.
 """
 import random
 ans = random.randint(1,100)
@@ -15,7 +14,7 @@ while True:
     else:
         print("Too small.")
 
-    random.seed(num) # Make the RNG deterministic.
+    random.seed(ans) # Make the RNG deterministic.
                      # So that you don't suddenly win the game
                      # by repeatedly providing the same value.
 
